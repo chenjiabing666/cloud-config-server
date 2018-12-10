@@ -1,0 +1,22 @@
+server:
+  port: 3344
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka  # eureka的暴露地址，直接注册
+spring:
+  application:
+    name: config-server   #应用的名称，在同一个eureka中必须不重复
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chenjiabing666/dept-config.git  # git仓库的地址，如果是ssh方式的不需要指定用户名和密码，但是需要在github上添加秘钥
+          username: chenjiabing666 # 用户名
+          password: as676767as     # 密码
+          basedir: C:/images/config-server   # 本地的路径，将会自动在这个路径创建一个git仓库
+
+            
+          
+       
