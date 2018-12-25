@@ -14,7 +14,7 @@ spring:
         git:
           uri: https://github.com/chenjiabing666/dept-config.git  # git仓库的地址，如果是ssh方式的不需要指定用户名和密码，但是需要在github上添加秘钥
           username: chenjiabing666 # 用户名
-          password: as676767as     # 密码
+          password: ******* # 密码
           basedir: C:/images/config-server   # 本地的路径，将会自动在这个路径创建一个git仓库
 
             
